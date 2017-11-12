@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Am I A Jerk?",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "current.logo.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+{
+  "matches": ["http://forums.eune.leagueoflegends.com/board/showthread.php?t=477075&page=3"],
+  "js": ["jquery-3.2.1.js","highlightText.js"],
+  "css": ["highlight.css"]
+}],
+"permissions": ["http://forums.eune.leagueoflegends.com/board/showthread.php?t=477075&page=3y"]
+}
